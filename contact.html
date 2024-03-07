@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="header">Meet us now!</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
+            <input type="hidden" name="access_key" value="a7e5790b-181c-4ffe-b80a-7159286721ec">
+            <label for="fullname">Full Name*</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <label for="businessname">Business Name*</label>
+            <input type="text" id="businessname" name="businessname" required>
+
+            <label for="businesstype">Business Type*</label>
+            <input type="text" id="businesstype" name="businesstype" required>
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number*</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="budgetmoney">Budget Money*</label>
+            <input type="text" id="budgetmoney" name="budgetmoney" required>
+
+            <label for="budgettime">Budget Time/Period*</label>
+            <input type="text" id="budgettime" name="budgettime" required>
+
+            <label for="targetedarea">Targeted Area*</label>
+            <input type="text" id="targetedarea" name="targetedarea" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+
+            <input type="submit" value="Let's go" class="submit-button">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
